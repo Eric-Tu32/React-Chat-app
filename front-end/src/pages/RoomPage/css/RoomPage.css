@@ -1,0 +1,8 @@
+.Upper-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-column-container {
+    margin-left: 10px;
+}

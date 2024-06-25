@@ -1,0 +1,42 @@
+.status-bar-container {
+    background-color: rgb(231, 231, 207);
+    width: 200px;
+    margin: 5px;
+}
+
+.chat-header-container {
+    margin: 5px
+}
+
+.chat-messages {
+    height: 150px;
+    width: 200px;
+    margin: 5px;
+    border: solid black;
+    border-width: 1px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.chat-message {
+    font-size: 14px;
+    margin: 5px;
+}
+
+.chat-input {
+    margin: 5px;
+    width: 135px;
+}
+
+#send-btn {
+    vertical-align: middle;
+    text-align: center;
+    width: 50px;
+    margin: 5px;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+#send-btn:hover {
+    background-color: rgb(176, 176, 176);
+}

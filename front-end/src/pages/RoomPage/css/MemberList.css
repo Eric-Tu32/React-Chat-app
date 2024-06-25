@@ -1,0 +1,23 @@
+.member-bar-container {
+    background-color: rgb(231, 231, 207);
+    width: 200px;
+    margin: 5px;
+    padding: 0;
+    margin: 0px
+}
+
+.member-list {
+    height: 220px;
+    width: 200px;
+    border: solid black;
+    border-width: 1px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.member {
+    font-size: 14px;
+    margin: 5px;
+    border-bottom: solid black;
+    border-width: 1px;
+}

@@ -1,0 +1,118 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+.vite/
+
+# Vite cache
+.vite/deps/
+.vite/temp/
+
+# Vite Server logs
+vite-plugin-optimize-persisted.json
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Local Vite env files
+.env.*
+!.env.example
+
+# IDE and editor specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# MacOS specific files
+.DS_Store
+
+# Temporary files
+tmp/
+temp/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Production directories
+build/
+
+# Output of 'npm pack'
+*.tgz
+
+# Debug log from npm
+npm-debug.log*
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# Parcel cache
+.cache
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+
+# Lint output
+eslintdebug.log
+
+# Local ESLint config
+.eslintrc.local.js
+
+# Local Prettier config
+.prettierrc.local.js
+
+# Stylelint config
+.stylelintrc
+
+# npm package-lock.json
+package-lock.json
+
+# Yarn lockfile
+yarn.lock
+
+# Webstorm project files
+.idea/
+
+# Svelte files
+*.svelte
+
+# Capacitor config file
+capacitor.config.json
+
+# Capacitor Android config
+android/
+
+# Capacitor iOS config
+ios/
+
+# Testing results
+junit.xml
+test-results.xml
