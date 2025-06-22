@@ -4,8 +4,18 @@ import ChatInput from "./ChatInput";
 
 import '../css/ChatBox.css'
 
-export default function ChatBox({ messageHistory, sendMessage, headerInfo }) {
-    const chatBoxRef = useRef(null);
+type ChatBoxProps = {
+	messageHistory: string[], 
+    sendMessage: (e: React.FormEvent<HTMLFormElement>, message: string, setMessage: React.Dispatch<React.SetStateAction<string>>) => void, 
+    headerInfo: {
+        onlineNum: number,
+        isOnline: boolean,
+        roomId: string,
+    }
+}
+
+export default function ChatBox({ messageHistory, sendMessage, headerInfo }: ChatBoxProps) {
+    const chatBoxRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         scrollToBottom();
@@ -13,7 +23,7 @@ export default function ChatBox({ messageHistory, sendMessage, headerInfo }) {
 
     const scrollToBottom = () => {
         if (chatBoxRef.current) {
-        chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
+            chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
         }
     };
 

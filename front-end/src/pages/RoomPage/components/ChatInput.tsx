@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-export default function ChatInput({ sendMessage }) {
+export default function ChatInput({ 
+    sendMessage 
+} : {
+    sendMessage: (e: React.FormEvent<HTMLFormElement>, message: string, setMessage: React.Dispatch<React.SetStateAction<string>>) => void
+}) {
     const [message, setMessage] = useState('');
 
     return (

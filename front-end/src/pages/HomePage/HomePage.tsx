@@ -8,12 +8,15 @@ export default function HomePage() {
     const [userName, setUserName] = useState(''); // 儲存用戶名
     const [roomID, setRoomID] = useState(''); // 儲存房間ID
     const navigate = useNavigate()
-
-    function redirectRoom(e, roomID, userName) {
+    
+    function redirectRoom(e: React.FormEvent<HTMLFormElement>, roomID: string, userName: string) {
         e.preventDefault()
+        sessionStorage.setItem('chatMessages', JSON.stringify([]));
+        const token = crypto.randomUUID()
         if (roomID.trim() && userName.trim()){
             navigate(`room/${roomID}`, {state: {
                 userName: userName,
+                token: token,
             }})
         }
     }
@@ -21,7 +24,7 @@ export default function HomePage() {
     return (
         <div className="home-main-container" id="home-main-container">
             <div className="header-container">
-                <h2>多人線上聊天</h2>
+                <h2>對決拉媽的</h2>
             </div>
             <div className="home-container">
                 <div className="LoginForm">

@@ -2,11 +2,12 @@
   "name": "back-end",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/back-end/src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "build": "npx tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "npm run build && nodemon dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,10 @@
     "socket.io": "^4.7.5"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.3",
+    "@types/socket.io": "^3.0.2",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.8.3"
   }
 }
